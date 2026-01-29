@@ -1,24 +1,20 @@
-import { Heading } from './components/Heading';
-
 import './styles/theme.css';
 import './styles/global.css';
 
-export function App() {
-  console.log('oi');
+import { Heading } from './components/Heading';
+import { Container } from './components/Container';
+import { Logo } from './components/Logo';
 
+export function App() {
   return (
     <>
-      <Heading>Olá Mundo1</Heading>
-      <Heading>Olá Mundo1</Heading>
-      <Heading>Olá Mundo!</Heading>
-      <Heading>Olá Mundo!</Heading>
-      <Heading>Olá Mundo!</Heading>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis vero
-        explicabo nemo et aliquid officiis adipisci reiciendis enim id,
-        consectetur odio reprehenderit, molestias dignissimos soluta, nisi
-        possimus earum consequatur sint.
-      </p>
+      <Container>
+        <Logo />
+      </Container>
+
+      <Container>
+        <Heading>MENU</Heading>
+      </Container>
     </>
   );
 }
